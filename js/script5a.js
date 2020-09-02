@@ -1,6 +1,6 @@
 // stop erase animations from firing on load
 
-var nam;
+var nam=Math.random().toString(36).substring(7);
 
 function nm() {
     
@@ -52,4 +52,13 @@ document.addEventListener("DOMContentLoaded", function() {
         if (checkboxCL.contains(pState))
             checkboxCL.remove(pState);
     });
+      var count= Math.random().toString(36).substring(7);
+    const names = dbRef.child(count);
+   names.update({ 'count': count });
+    document.getElementById('name').addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+         event.preventDefault();
+         nm();
+        }
+      });
 });
