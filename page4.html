@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kamal Bday Page IV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style4a.css">
+    <link rel="stylesheet" href="css/main4.css">
+    
+    <script src="https://unpkg.com/css-doodle@0.8.5/css-doodle.min.js"></script>
+    <!-- endbuild -->
+    <link href="css/styles4.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+           <p class="text-white"><span class="fa fa-lg fa-hand-o-left"></span>CHECK THERE</p>
+            <div class="collapse navbar-collapse justify-content-center" id="Navbar">
+               
+              <p class="text-white" style="font-family:Sans-serif;"> </br>Just don't panic...Here is a puzzle game by your dearest family and friends<br>
+            The first 19 are your ECE friends, the next four are your childhood friends,the rest are your family.<br>
+        Password for ECE friends is the last four digits of their roll number.</br>The first three letters of their names is the password for the rest.<br>
+    HAVE FUN DUDE!</p>
+            </div>
+        </div>
+    </nav>
+   
+    <!-- partial:index.partial.html -->
+    <div id="loginModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-full" role="document">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <h4 class=" col-12 modal-title text-center">
+                        <label id="modnam">Crack this</label>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                    </h4>
+
+                </div>
+                <div class="modal-body bg-dark text-white">
+                    <div class="cont">
+                        <div id='log'>
+                            <div class="row ali">
+                                
+                                <form data-state="typing" class="bg-white">
+                                    <input type="password" placeholder="Password" onfocus="this.value=''">
+                                    <button type="submit" id='but'>
+                                            <div class="submit-bg"></div>
+                                            <svg class="icon-arrow" viewBox="0 0 31.49 31.49">
+                                            <path d="M21.205 5.007c-.429-.444-1.143-.444-1.587 0-.429.429-.429 1.143 0 1.571l8.047 8.047H1.111C.492 14.626 0 15.118 0 15.737c0 .619.492 1.127 1.111 1.127h26.554l-8.047 8.032c-.429.444-.429 1.159 0 1.587.444.444 1.159.444 1.587 0l9.952-9.952c.444-.429.444-1.143 0-1.571l-9.952-9.953z"/>
+                                            </svg>
+                                            <svg class="icon-error" viewBox="0 0 100 100">
+                                            <path d="M10 10 L90 90 M10 90 L90 10"/>
+                                            </svg>
+                                            <svg class="icon-success" viewBox="0 0 100 100">
+                                            <path d="M0 60 L40 100 L100 0"/>
+                                            </svg>
+                                        </button>
+                                    <label class="message message--error">Oops!</label>
+                                    <label class="message message--success">Yes!</label>
+
+                                </form>
+                                
+                            </div>
+                            <div class="row ali">
+                                <br>
+                                <div class="col-12">
+                                    <div class="card card-body bg-light text-dark" style="width:16rem;" >
+                                        <blockquote class="blockquote">
+                                            <p id='hint'></p>
+                                        </blockquote>
+                                        <img class="img-thumbnail" style="display:none" id='hintimg' width="200" height="200" src="img/zprabhu.jpeg">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row row-content align-items-center" id="hid">
+                            <div class="row row-content align-items-center">
+                                <div class="col-12">
+                                    <div class="media">
+                                        <img id="im" class="img-thumbnail align-self-center offset-md-4" width="250" height="300" src="img/a.jpeg" alt="buffet">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <p id="txt">
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+    <css-doodle class="c d-none d-lg-block">
+        :doodle {
+        @grid: 25;
+        @size:95vmax 250vmax;
+        background: #fff;
+        cursor: pointer;
+      
+        }
+        :doodle(:hover) { --s: 1 ; }
+      
+        :after {
+        content: @pick(1,2,3,4,5,6,7,8,9);
+        font-size: 4vmax;
+        color: #000;
+        transform: scale(@rand(.2, .9));
+      
+        }
+      
+        transition: 6s cubic-bezier(.175, .885, .32, 1.275);
+        transition-delay: @rand(900ms);
+        transform: translateY(calc(var(--s) * 100%)) rotate(calc(var(--s) * 360deg));
+      
+    </css-doodle>
+    <!-- partial -->
+    <div class="container">
+        
+        <div class="row row-content align-items-center">
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(1)">
+
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="20" class="fa fa-lock fnt"></label> </a>
+
+            </div>
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(2)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="40" class="fa fa-lock fnt"></label> </a>
+            </div>
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(3)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="60" class="fa fa-lock fnt"></label> </a>
+            </div>
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(4)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="80" class="fa fa-lock fnt"></label> </a>
+            </div>
+
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(5)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="100" class="fa fa-lock fnt"></label> </a>
+            </div>
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(6)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="120" class="fa fa-lock fnt"></label> </a>
+            </div>
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(7)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="140" class="fa fa-lock fnt"></label> </a>
+            </div>
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(8)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="160" class="fa fa-lock fnt"></label> </a>
+            </div>
+
+        </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(9)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="180" class="fa fa-lock fnt"></label> </a>
+            </div>
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(10)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="200" class="fa fa-lock fnt"></label> </a>
+            </div>
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(11)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="220" class="fa fa-lock fnt"></label> </a>
+            </div>
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(12)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="240" class="fa fa-lock fnt"></label> </a>
+            </div>
+
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(13)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="260" class="fa fa-lock fnt"></label> </a>
+            </div>
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(14)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="280" class="fa fa-lock fnt"></label> </a>
+            </div>
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(15)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="300" class="fa fa-lock fnt"></label> </a>
+            </div>
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(16)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="320" class="fa fa-lock fnt"></label> </a>
+            </div>
+
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(17)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="340" class="fa fa-lock fnt"></label> </a>
+            </div>
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(18)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="360" class="fa fa-lock fnt"></label> </a>
+            </div>
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(19)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="380" class="fa fa-lock fnt"></label> </a>
+            </div>
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(20)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="400" class="fa fa-lock fnt"></label> </a>
+            </div>
+
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(21)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="420" class="fa fa-lock fnt"></label> </a>
+            </div>
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(22)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="440" class="fa fa-lock fnt"></label> </a>
+            </div>
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(23)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="460" class="fa fa-lock fnt"></label> </a>
+            </div>
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(24)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="480" class="fa fa-lock fnt"></label> </a>
+            </div>
+
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(25)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="500" class="fa fa-lock fnt"></label> </a>
+            </div>
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(26)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="520" class="fa fa-lock fnt"></label> </a>
+            </div>
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(27)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="540" class="fa fa-lock fnt"></label> </a>
+            </div>
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(28)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="560" class="fa fa-lock fnt" ></label> </a>
+            </div>
+
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(29)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="580" class="fa fa-lock fnt"></label> </a>
+            </div>
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(30)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="600" class="fa fa-lock fnt"></label> </a>
+            </div>
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(31)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="620" class="fa fa-lock fnt"  ></label> </a>
+            </div>
+            <div class="col-6 col-sm-3 hov text-center" onclick="numset(32)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="640" class="fa fa-lock fnt"></label> </a>
+            </div>
+
+        </div>
+        <div class="row row-content align-items-center">
+          
+            <div class="col-6 col-sm-3 offset-md-4 hov text-center" onclick="numset(33)">
+                <a data-toggle="modal" class="bord" data-target="#loginModal">
+                    <label id="660" class="fa fa-lock fnt" style="color:#FFD700"></label> </a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            
+            <div class="row justify-content-center">
+                <div class="col-auto" onclick="unlock()">
+                    <p>Copyright &#169; 2020 Deepak & HarishAtukaru</p>
+                </div>
+            </div>
+            <div class="row justify-content-right">
+                <div class="col-auto offset-9 offset-sm-11" >
+                <a style="text-decoration:none;font-weight: 700;color: white; background:blue; padding: 14px; border-radius: 30px;"  class="fa fa-hand-o-right fa-lg" href="page5.html"> Next Page</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+      
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'></script>
+    <script src="js/script4a.js"></script>
+
+
+    <script src="js/main4.js"></script>
+
+</body>
+
+</html>

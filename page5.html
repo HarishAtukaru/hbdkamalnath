@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kamal Bday page V</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/findShapeIndex.js'></script>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link href="css/styles5d.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Titillium+Web'>
+    <link rel="stylesheet" href="css/style5a.css">
+    <script src="js/script5a.js"></script>
+    <link rel="stylesheet" href="css/style5b.css">
+    <script src="js/script5b.js"></script>
+    <link rel="stylesheet" href="css/style5c.css">
+    <link rel="stylesheet" href="css/style5e.css">
+    <script src="js/script5c.js"></script>
+    <style>
+        #next{
+        width: auto;
+        margin: 15px;
+        padding-bottom: 1%;
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        font-weight: 600;
+        text-align: center;
+      }
+      #next a{
+        font-size:400%;
+        text-decoration: none;
+       }
+          </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row row-header align-items-center">
+                <div class="col-12 offset-md-5">
+                <h1 style="position: relative;right:10%; padding:2%; font-family: 'Times New Roman', Times, serif; "><b>Feedback please :)</b></h1>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-full" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <!--div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div-->
+                <div class="modal-body ">
+                    <div class="textbox " style="width:350px">
+                        <div class="textbox-box">
+                            <div class="textbox-face textbox-side"></div>
+                            <div class="textbox-face textbox-bottom"></div>
+                            <div class="textbox-face textbox-top"></div>
+                            <div class="textbox-field">
+                                <div class="textbox-label">Your name please...</div>
+                                <input class="textbox-text" id="name" type="text" placeholder="Type here..." required/>
+                            </div>
+                            <div class="textbox-action">
+                                <div class="textbox-face textbox-side"></div>
+                                <div class="textbox-face textbox-top"></div>
+                                <div class="textbox-face textbox-bottom"></div>
+                                <div>
+                                    <a onclick="nm()" href="#content">
+                                        <svg viewBox="0 0 24 24">
+                            <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                          </svg></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row  ">
+
+            <div class="col-12">
+               
+            </div>
+        </div>
+        <div class="row row-content " style="background-image: url('img/bg.jpg');" >
+
+            <div class="col-12" id="content">
+                <form>
+                    <label><input class="cb pristine messageCheckbox" value="diff" type="checkbox"> <label>Loved the site</label></label>
+                    <label><input class="cb pristine messageCheckbox" value="like" type="checkbox"><label>Reached my expectations</label> </label>
+                    <label><input class="cb pristine messageCheckbox" value="done" type="checkbox"><label>Excited to see the final page too</label> </label>
+                </form>
+            </div>
+        </div>
+
+        <div class="row row-content ">
+            <div class="col-12 offset-md-4">
+                <h2>Rate our website:</h2>
+                <iframe src="yeti.html" style="padding-top:3%; padding-bottom: 3%;"></iframe>
+            </div>
+        </div>
+        <div class="row row-content ">
+
+            <div class="col-12 col-md-6 offset-md-3">
+                <label for="feedback" class="col-md-2 col-form-label"><h3>Wanna_say_something?</h3></label>
+                <textarea class="form-control" id="feedback" name="feedback" rows="5"></textarea>
+
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-12">
+                <div class="wrapper-no4">
+                    <button class="button-bird" onclick="display()">
+                    <p class="button-bird__text" >SEND</p>
+                    <svg version="1.1" class="feather" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 75 38" style="enable-background:new 0 0 75 38;" xml:space="preserve">
+                    <g>
+                        <path d="M20.8,31.6c3.1-0.7,2.9-2.3,2,1c9.1,4.4,20.4,3.7,29.1-0.8l0,0c0.7-2.1,1-3.9,1-3.9c0.6,0.8,0.8,1.7,1,2.9
+                            c4.1-2.3,7.6-5.3,10.2-8.3c0.4-2.2,0.4-4,0.4-4.1c0.6,0.4,0.9,1.2,1.2,2.1c4.5-6.1,5.4-11.2,3.7-13.5c1.1-2.6,1.6-5.4,1.2-7.7
+                            c-0.5,2.4-1.2,4.7-2.1,7.1c-5.8,11.5-16.9,21.9-30.3,25.3c13-4,23.6-14.4,29.1-25.6C62.8,9,55.6,16.5,44.7,20.7
+                            c2.1,0.7,3.5,1.1,3.5,1.6c-0.1,0.4-1.3,0.6-3.2,0.4c-7-0.9-7.1,1.2-16,1.5c1,1.3,2,2.5,3.1,3.6c-1.9-0.9-3.8-2.2-5.6-3.6
+                            c-0.9,0.1-10.3,4.9-22.6-12.3C5.9,17.7,11.8,26.9,20.8,31.6z"/>
+                    </g>
+                    </svg>
+                    <span class="bird"></span>
+                    <span class="bird--1"></span>
+                    <span class="bird--2"></span>
+                    <span class="bird--3"></span>
+                    <span class="bird--4"></span>
+                    <span class="bird--5"></span>
+                    <span class="bird--6"></span>
+                    <span class="bird--7"></span>
+                    <span class="bird--8"></span>
+                    <span class="bird--9"></span>
+                    <span class="bird--10"></span>
+                    <span class="bird--11"></span>
+                    <span class="bird--12"></span>
+                    <span class="bird--13"></span>
+                    <span class="bird--14"></span>
+                    <span class="bird--15"></span>
+                    <span class="bird--16"></span>
+                    <span class="bird--17"></span>
+                    <span class="bird--18"></span>
+                    <span class="bird--19"></span>
+                    <span class="bird--20"></span>
+                    <span class="bird--21"></span>
+                    <span class="bird--22"></span>
+                    <span class="bird--23"></span>
+                    <span class="bird--24"></span>
+                    <span class="bird--25"></span>
+                    <span class="bird--26"></span>
+                    <span class="bird--27"></span>
+                    <span class="bird--28"></span>
+                    <span class="bird--29"></span>
+                    <span class="bird--30"></span>
+                </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id='next'>
+        <a href="page6.html">&#127848;</a> 
+        <p>The Final Page is here!</p>
+      </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-12 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/kamalnath.rajakumar"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-github" href="https://github.com/harishatukaru"><i class="fa fa-github"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:deepak224495@gmail.com"><i class="fa fa-envelope-o"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p> Copyright &#169; 2020 HarishAtukaru & Deepak</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
+
+
+body {
+  background-color: #111;
+  background-image: radial-gradient(#333, #111);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  text-align: center;
+  width: 100vw;
+  font-weight: 700;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#fly-in {
+  font-size: 4em;
+  margin: 40vh auto;
+  height: 20vh; 
+  text-transform: uppercase;
+}
+
+#fly-in span {
+  display: block;
+  font-size: .4em;
+  opacity: .8;
+}
+
+#fly-in div {
+ position: fixed;
+  margin: 2vh 0;
+  opacity: 0;
+  left: 10vw;
+  width: 80vw;
+  animation: switch 230s linear 1;
+}
+
+#fly-in div:nth-child(2) { animation-delay: 6s}
+#fly-in div:nth-child(3) { animation-delay: 12s}
+#fly-in div:nth-child(4) { animation-delay: 18s}
+#fly-in div:nth-child(5) { animation-delay: 24s}
+#fly-in div:nth-child(6) { animation-delay: 30s}
+#fly-in div:nth-child(7) { animation-delay: 36s}
+#fly-in div:nth-child(8) { animation-delay: 42s}
+#fly-in div:nth-child(9) { animation-delay: 48s}
+#fly-in div:nth-child(10) { animation-delay: 54s}
+#fly-in div:nth-child(11) { animation-delay: 60s}
+#fly-in div:nth-child(12) { animation-delay: 66s}
+#fly-in div:nth-child(13) { animation-delay: 72s}
+#fly-in div:nth-child(14) { animation-delay: 78s}
+#fly-in div:nth-child(15) { animation-delay: 84s}
+#fly-in div:nth-child(16) { animation-delay: 90s}
+#fly-in div:nth-child(17) { animation-delay: 96s}
+#fly-in div:nth-child(18) { animation-delay: 102s}
+#fly-in div:nth-child(19) { animation-delay: 108s}
+#fly-in div:nth-child(20) { animation-delay: 114s}
+#fly-in div:nth-child(21) { animation-delay: 120s}
+#fly-in div:nth-child(22) { animation-delay: 126s}
+#fly-in div:nth-child(23) { animation-delay: 132s}
+#fly-in div:nth-child(24) { animation-delay: 138s}
+#fly-in div:nth-child(25) { animation-delay: 144s}
+#fly-in div:nth-child(26) { animation-delay: 150s}
+#fly-in div:nth-child(27) { animation-delay: 156s}
+#fly-in div:nth-child(28) { animation-delay: 162s}
+#fly-in div:nth-child(29) { animation-delay: 168s}
+#fly-in div:nth-child(30) { animation-delay: 174s}
+#fly-in div:nth-child(31) { animation-delay: 180s}
+#fly-in div:nth-child(32) { animation-delay: 186s}
+#fly-in div:nth-child(33) { animation-delay: 192s}
+#fly-in div:nth-child(34) { animation-delay: 198s}
+#fly-in div:nth-child(35) { animation-delay: 204s}
+#fly-in div:nth-child(36) { animation-delay: 210s}
+#fly-in div:nth-child(37) { animation-delay: 216s}
+#fly-in div:nth-child(38) { animation-delay: 224s}
+
+
+
+@keyframes switch {
+    0% { opacity: 0;filter: blur(20px); transform:scale(12)}
+    2% { opacity: 1;filter: blur(0); transform:scale(1)}
+    4% { opacity: 1;filter: blur(0); transform:scale(.9)}
+    5% { opacity: 0;filter: blur(10px); transform:scale(.1)}
+    6% { opacity: 0}
+    100% { opacity: 0}
+}

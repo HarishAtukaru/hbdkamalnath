@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>HBD Kamal Page VI</title>
+  <link rel="stylesheet" href="CSS/style6.css">
+  <style>
+    #audio{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  
+}
+
+#playVideo {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  font-size:50px;
+}
+  </style>
+</head>
+<body>
+  <div id="audio">
+   
+    <button type="button" onclick="aud()" id="playVideo">&#9658;</button>
+</div>
+
+<div id="fly-in" style="display:none">  
+<div><span>Dedicated to</span> Kamalnath Rajakumar</div>
+<div>Deepak Mani<span>Website development</span></div>
+<div><span>Website & User Interface</span>Harish Atukaru</div>
+<div>Our Sincere thanks to</div>
+<div>Chithiradevi<span>Amma</span></div>
+<div>Rajakumar<span>Appa</span></div>
+<div>Asokan<span>Periappa</span></div>
+<div>Vimala<span>Patti</span></div>
+<div>Manjuladevi<span>Periyamma</span></div>
+<div>Nandini Krishnan<span>Akka</span></div>
+<div>Gayatri<span>Akka</span></div>
+<div>Sandhya<span>Akka</span></div>
+<div>Nithiya<span>Akka</span></div>
+<div>Kiruthik & Sanjay<span>Kuttis</span></div>
+<div>Kishore kumar B S</div>
+<div>Priyanka</div>
+<div>Muthupriyadharshini</div>
+<div>Ariharan Vellaichamy</div>
+<div>Boobalakannan</div>
+<div>Kishore Kutty</div>
+<div>Prabhu Shankar</div>
+<div>Nivethithai</div>
+<div>Mithun Kumar</div>
+<div>Nanthini</div>
+<div>Thenmozhi</div>
+<div>Tamil Selvan C</div>
+<div>Susmitha</div>
+<div>Ushasornapriya</div>
+<div>Amutamil</div>
+<div>Venkat Krishnan</div>
+<div>Priyadharshan</div>
+<div>Caleb Rubin</div>
+<div>Ravi Balaji</div>
+<div>Sanjay</div>
+<div>Hariharan</div>
+<div>This might be THE END of our site</div>
+<div>But not of our love and frienship</div>
+<div>Happy Birthay Mama &#10084;</div>
+
+</div>
+<div id='audi' style="visibility:hidden;">
+
+</div>
+
+<script>
+function aud()
+{
+document.getElementById('audi').innerHTML="<iframe src=\"last.mp3\"></iframe>";
+document.getElementById('audio').style.display="none";
+document.getElementById('fly-in').style.display="block";
+}
+
+  </script>
+</body>
+</html>
