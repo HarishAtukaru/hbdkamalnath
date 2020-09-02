@@ -32,7 +32,7 @@ p {
 .next a{
   z-index: 1000;
   display: inline-block;
-  position: fixed;
+  position: absolute;
   width:auto;
   text-decoration: none;
   color:#000;
